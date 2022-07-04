@@ -7,8 +7,8 @@ for (i in planets_array){
     document.body.appendChild(planets);
     let list =planets.classList;
     list.add(planets_array[i]);
-    let section=document.getElementsByTagName("section");
-    (planets).appendTo(section);
+    let root = document.getElementsByClassName("listPlanets")[0];
+    root.appendChild(planets);
 }
 
 
@@ -24,5 +24,7 @@ document.getElementsByClassName("Uranus")[0].style.backgroundColor="white";
 document.getElementsByClassName("Neptune")[0].style.backgroundColor="lightblue";
 
 
-let section=document.getElementsByTagName("section");
+console.log("hey");
+
+
 
