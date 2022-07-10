@@ -1,9 +1,8 @@
-//event.preventDefault()
+
 let input=document.getElementById("input_2")
-// let input=document.getElementById("text_box")
+
 let button= document.getElementById('button'); 
-// let navbar=document.getElementById("navbar")
-// navbar.style.display="none"
+
 let second_input=document.getElementById("input")
 
 let loc_array=[]
@@ -14,16 +13,11 @@ document.getElementById("things_to_do").style.display="none"
 document.getElementById("input").style.display="none"
 document.getElementById("nav_button").style.display="none"
 
-//console.log(document.getElementById("activities"))
 
 function search(){
     event.preventDefault()
 
     console.log("1", input.value)
-
-    // let add_search_bar=document.getElementById("home_bar")
-    // add_search_bar.type="text"
-    // add_search_bar.className="form-control input-group-lg"
  
 
 
@@ -43,7 +37,6 @@ function search(){
     all_my_functions()
 }
 
-    // let myTimeout=setTimeout(all_my_functions, 0);
 
 function all_my_functions(){
     
@@ -54,16 +47,7 @@ function all_my_functions(){
     kids_activities()
     places_to_stay()
 }
-    // let nav_bar_search= document.getElementById("input_nav")
-    // let new_button=document.getElementById("nav_button")
-    // new_button.addEventListener('click',function(){
-    //     loc_array=[]
-    //     console.log("4",nav_bar_search.value)
-    //     loc_array.push(nav_bar_search.value);
-    //     console.log("8",loc_array)
-    //     search(loc_array[0])
 
-    //})
     
 let nav_bar_search= document.getElementById("input_nav")
 let new_button=document.getElementById("nav_button")
@@ -113,9 +97,9 @@ function things_to_do(){
         insert_location+=loc_array[i]
     }
     let link = "http://www.google.com/search?client=firefox-b-e&q="+insert_location+" things+to+do"
-    //let things_to_do = "Things To Do".link(link);
+
     let things=document.getElementById("things_to_do")
-    //document.getElementById("things_to_do").innerHTML= things_to_do;
+
     document.getElementById("things_to_do").className+= "card mb-3 border border-3 border-primary col-4";
     let img= document.createElement('img')
     img.src="https://www.choicehotels.com/cms/images/choice-hotels/pace/hero-explore-what-to-do-in-a-new-city-charlotte/hero-explore-what-to-do-in-a-new-city-charlotte.jpg" 
@@ -162,10 +146,8 @@ function where_to_eat(){
         insert_location+=loc_array[i]
     }
     let link = "https://www.yelp.com/search?find_desc=food&find_loc="+insert_location;
-    //let where_to_eat = "Where to Eat".link(link_to_eat);
-    let where_to_eat=document.getElementById("food")
-    //document.getElementById("food").innerHTML = where_to_eat;
 
+    let where_to_eat=document.getElementById("food")
     document.getElementById("food").className+= "card mb-3 border border-3 border-primary col-3";
     let img= document.createElement('img')
     img.src="https://st2.depositphotos.com/3591429/10531/i/950/depositphotos_105319422-stock-photo-people-enjoying-food.jpg" 
@@ -204,8 +186,7 @@ function Bars(){
         insert_location+=loc_array[i]
     }
     let link= "https://www.yelp.com/search?find_desc=Bars&find_loc="+insert_location;
-    //let where_to_drink = "Bars".link(link_to_bars);
-    //document.getElementById("bars").innerHTML = where_to_drink;
+
 
     let bars=document.getElementById("bars")
     document.getElementById("bars").className+= "card mb-3 border border-3 border-primary col-3";
@@ -253,8 +234,7 @@ function kids_activities(){
         insert_location+=loc_array[i]
     }
     let link = "https://www.yelp.com/search?cflt=kids_activities&find_loc="+insert_location;
-    //let kids_activies = "Activities for Kids".link(link_to_kids_activities);
-    //document.getElementById("kids_activities").innerHTML = kids_activies;
+
     let kids=document.getElementById("kids_activities")
     document.getElementById("kids_activities").className+= "card mb-3 border border-3 border-primary col-3";
     let img= document.createElement('img')
@@ -299,8 +279,7 @@ function places_to_stay(){
         insert_location+=loc_array[i]
     }
     let link = "https://www.google.com/travel/hotels/"+insert_location;
-    //let hotels = "Places to Stay".link(link_to_hotels);
-    //document.getElementById("hotels").innerHTML = hotels;
+
     let hotels=document.getElementById("hotels")
     document.getElementById("hotels").className+= "card mb-3 border border-3 border-primary col-3";
     let img= document.createElement('img')
