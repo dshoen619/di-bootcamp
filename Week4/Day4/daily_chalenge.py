@@ -19,11 +19,12 @@ while counter<3:
 length=len(coded_string)
 
 for i in range(length):
+    if coded_string[i-1]==" ":
+        continue
     if coded_string[i].isalpha()==True:
         decoded_string+=coded_string[i]
     if coded_string[i].isalpha()==False and (coded_string[i-1].isalpha()==False) and i!=0:
         decoded_string+=" "
-
 
 print(decoded_string)
 
