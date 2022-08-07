@@ -8,10 +8,6 @@ connection = psycopg2.connect(host=HOSTNAME, user=USERNAME, dbname=DATABASE )
 cursor = connection.cursor()
 
 
-
-
-
-
 class MenuItem:
 
     def __init__(self, item_name, price):
