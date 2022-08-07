@@ -23,4 +23,7 @@
 -- Delimiter ','
 -- CSV Header;
 
-select * from drug_list
+
+select* from drug_list;
+-- select * from drug_list 
+-- where dragindication LIKE '%diar%';
