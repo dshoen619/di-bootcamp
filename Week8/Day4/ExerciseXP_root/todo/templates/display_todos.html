@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {% for todo in to_dos%}
+        <p>Title: {{todo.title}} &emsp;   Details: {{todo.details}}</p>
+        <p>Date_Creation: {{todo.date_creation}} &emsp; Deadline_Date: {{todo.deadline_date}}</p>
+        <p>Category: {{todo.category}}</p>
+
+        <button type="button">Done</button>
+    {% endfor %}
+</body>
+</html>
