@@ -5,6 +5,11 @@ HOSTNAME = 'localhost'
 USERNAME = 'davidshoen1'
 DATABASE = 'hackathon2'
 
+# "Hey david in general i like the idea of your project and the code seems to be correct to implement a search of diseaseas based in the symptoms"
+
+
+# here i was not able to acces the databe to actually check the app because i dont have the password to make the connection
+
 connection = psycopg2.connect(host=HOSTNAME, user=USERNAME, dbname=DATABASE )
 cursor = connection.cursor()
 
