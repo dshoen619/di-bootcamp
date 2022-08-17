@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% include 'partials/base.html' %}
+
+{% block content %}
+    {%for film in films%}
+    <div>
+        <br>
+        Title: {{film.title}}
+        <br>
+        Genre:
+        {% for cat in film.categories.all%}
+            {{cat}} |
+        {% endfor %}
+        <br>
+        Director:
+        {% for dir in directors%}
+            <p>{{dir.first_name}} {{dir.last_name}} <p>
+        {%endfor%}
+        <br>
+    </div>
+    {%endfor%}
+{% endblock content%}
+
+</body>
+</html>
