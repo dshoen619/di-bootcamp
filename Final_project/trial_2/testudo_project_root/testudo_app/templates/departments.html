@@ -1,0 +1,52 @@
+{% block content %}
+
+<style>
+    .departments_header{
+        text-align: center;
+        font-family: "font-family:'Lucida bright', serif;";
+
+    }
+    .all_departments{
+        padding:10px;font-family:'Lucida bright', serif;
+    }
+    #dept_button{
+        color:black;
+    }
+</style>
+
+
+<div class= "departments_header"><h2>Departments</h2></div>
+
+{% for i in '0' %}
+<div class="container all_departments">
+    <div class="row">
+        <div class= "col-md-6">
+        {% for i in dept_id_list_1 %}
+            <div>
+            <a id ="dept_button" type="button" style="text-decoration:none" href="{% url 'dept_click' i user%}"> 
+                <span>{{i}} &ensp;</span>
+            </a>
+            </div>
+        {% endfor %}
+        </div>
+        <div class= "col-md-6">
+        {% for i in dept_id_list_2 %}
+            <div>
+            <a id ="dept_button" type="button" style="text-decoration:none" href="{% url 'dept_click' i user %}"> 
+                <span>{{i}} &ensp;</span>
+            </a>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+       
+
+
+
+
+
+
+
+{% endblock content %}

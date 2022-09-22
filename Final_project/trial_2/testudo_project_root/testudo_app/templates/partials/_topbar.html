@@ -1,0 +1,64 @@
+<!-- Top Bar -->
+<style>
+    .umd_logo {
+        height: 60%;
+        width:60%; 
+        margin:auto 5px;
+        float:left;
+
+
+    }
+    .harry_potter_font{
+        font-family:'Harry Potter', sans-serif;
+        font-size:80px;
+        text-align:left;
+        vertical-align: text-bottom;
+    }
+    .topbar{
+        background-color: #E81158;
+    }
+    .title{
+        background-color: #444 ;
+        color:#eee;
+        font-family: 'Lucida bright', serif;
+        font-size:large;
+    }
+    .registrar{
+        text-align: right;
+    }
+    .soc_link{
+      color:white;
+    }
+
+
+</style>
+<link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+
+<section id="top-bar" class="p-3 topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 ">
+          <img class="umd_logo" src="https://dbukjj6eu5tsf.cloudfront.net/umterps.com/images/responsive_2021/logo_main.svg">
+        </div>
+        <div class="col-md-9 harry_potter_font">
+          University of Shoen
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="title" class="p-3 title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" type="button">
+            <a class="soc_link" style="text-decoration:none" href="{% url 'homepage' %}"> SCHEDULE oF CLASSES</a>
+        </div>
+        <div class="col-md-5 registrar">
+          <a class="soc_link" style="text-decoration:none" href="{% url 'register' %}">Sign Up</a>       
+      </div>
+      <div class="col-md-1 registrar">
+        <a class="soc_link" style="text-decoration:none" href="{% url 'login' %}">Login</a>       
+    </div>
+
+    </div>
+  </section>

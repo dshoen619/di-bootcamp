@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+    font-family: "Raleway";
+}
+
+.container_2{
+    position:relative;
+}
+
+.hello {
+    text-align: center;
+    position: absolute;
+    bottom: 300px;
+    right: 20px;
+    background-color: transparent;
+    color: black;
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+
+.hello button {
+    border:none;
+    border-radius: 12px;
+
+}
+.about_me, .portfolio, .blog, body {
+    background-color: #F4F4F4;
+}
+.about_me img {
+    border-radius: 50vh;
+    width: 275px;
+}
+
+.vertical {
+    border-left: 6px solid black;
+    height: 200px;
+    position:absolute;
+    left: 50%;
+}
+
+.portfolio #port_image_1,#port_image_2,#port_image_3,#port_image_4,#port_image_5,#port_image_6 {
+    width: 275px;}
+
+i {
+    width:30px;
+    size:200%
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+    *{
+        font-family: "Raleway";
+        background-color: #f8f9fa;
+    }
+    
+    .container_2{
+        position:relative;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    .hello {
+        width:50%;
+        text-align: center;
+        position: absolute;
+        bottom: 35%;
+        right: 0%;
+        left:27.5%;
+        background-color: transparent;
+        color: black;
+
+      }
+    
+    .hello button {
+        border:none;
+        border-radius: 12px;
+    
+    }
+    .about_me, .portfolio, .blog, body {
+        background-color: #F4F4F4;
+    }
+    .about_me img {
+        border-radius: 50vh;
+        width: 275px;
+    }
+    
+    .vertical {
+        border-left: 6px solid black;
+        height: 200px;
+        position:absolute;
+        left: 50%;
+    }
+    
+    .portfolio #port_image_1,#port_image_2,#port_image_3,#port_image_4,#port_image_5,#port_image_6 {
+        width: 275px;}
+    
+    i {
+        width:30px;
+        size:200%
+    }
+</style>
+
+<body>
+
+
+    <header>
+        {% include 'partials/_navbar.html' %} 
+       <div class="container_2">
+            <div class="bg-image" style= "background-image: url('https://images.pexels.com/photos/533769/pexels-photo-533769.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1'); 
+            height: 100vh; ; background-repeat:no-repeat; background-size:cover">
+            </div>
+            <div class="hello"><h1>David Shoen</h1> 
+                <p>Hi, thanks for visiting my porfolio website! Here, you will be able to learn a little bit about me and some of my accomplishments. Please feel free to reach out with any unanswered questions!</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="about_me">
+        <br>
+        <div class="container_3">
+            <div class="row">
+              <div class="col-6">
+                <img src="https://media-exp2.licdn.com/dms/image/C4D03AQGsKxh91CRJqA/profile-displayphoto-shrink_800_800/0/1619470871558?e=1661385600&amp;v=beta&amp;t=9ttUeOuS_j1f5ZM34pK3ugwYtDLjMwvHU2OzPi1qpKE" class=" mx-auto d-block">
+            </div>
+              <div class="col">
+                  <h2>About me</h2>
+                  <p>Growing up in the great state New Jersey, I was a problem solver and a builder. I've lost more lego pieces than I can count. Ive been fortunate enough to be able to carry this passion into the professional field. I studied mechanical engineering in University, where I got my first taste of coding and software development. I worked for 2 years in Mechanical engineering before deciding to devote myself to where my skillset and passions lay: coding.  </p>
+              </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <br>
+        <div class="container_4">
+            <div class="row justify-content-center h2">Portfolio</div>
+            <div class="row">
+              <div class="col-sm">
+                <img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"  class="mx-auto d-block" id="port_image_1">
+              </div>
+              <div class="col-sm">
+                <img src="https://images.pexels.com/photos/6424586/pexels-photo-6424586.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" class="mx-auto d-block" id="port_image_2">
+              </div>
+              <div class="col-sm">
+                <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" class="mx-auto d-block" id="port_image_3">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" class="mx-auto d-block" id="port_image_4">
+                </div>
+                <div class="col-sm">
+                    <img src="https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" class="mx-auto d-block" id="port_image_5">
+                </div>
+                <div class="col-sm">
+                    <img src="https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" class="mx-auto d-block" id="port_image_6">
+                </div>
+              </div>
+          </div>
+          <br>
+    </section>
+
+    <section class="blog">
+        <br>
+        <div class="container_4">
+            <div class="row justify-content-center h2">Blog</div>
+            <div class="row">
+              <div class="col-sm">
+                <div class="card mx-auto d-block" style="width: 18rem;">
+                    <img class="card-img-top" src="https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Funny Blog</h5>
+                      <p class="card-text">Do you like to laugh?</p>
+                      <a href="#" class="btn btn-primary">Take me there!</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm">
+                <div class="card mx-auto d-block" style="width: 18rem;">
+                    <img class="card-img-top" src="https://images.pexels.com/photos/261579/pexels-photo-261579.jpeg" alt="Card image cap" height="190px">
+                    <div class="card-body">
+                      <h5 class="card-title">Serious Blog</h5>
+                      <p class="card-text">Do you hate fun?</p>
+                      <a href="#" class="btn btn-primary">Take me there!</a>
+                    </div>
+                  </div>
+              </div>  
+              </div>
+            </div>
+            <br>
+            <hr style="width:50%; text-align: left; margin-left:25%">
+    
+    <section class="contact">
+        <div class="container_5">
+            <div class="row">
+              <div class="col-3 text-center">
+                <h2>Get in Touch</h2>
+                <br>
+                <i class="fa-brands fa-twitter"></i><span>&nbsp;<i class="fa-brands fa-facebook"></i></span><span>&nbsp;<i class="fa-brands fa-instagram"></i></span>
+            </div>
+              <div class="col-9">
+                <form>
+                    <div class="form-group row">
+                      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm"></label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Your Name">
+                        <br>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="colFormLabel" class="col-sm-2 col-form-label"></label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="colFormLabel" placeholder="Your Email">
+                        <br>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg"></label>
+                        <div class="col-sm-10">
+                         <input type="email" class="form-control form-control-lg" id="colFormLabelLg" >
+                    </div>
+                  </form>
+              </div>
+        </div>
+
+    </section>
+</body>
+</html>
+

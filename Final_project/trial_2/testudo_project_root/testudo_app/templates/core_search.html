@@ -1,0 +1,111 @@
+{% block content %}
+<!-- Showcase -->
+{% if not user or user == 'None' %}
+{% include 'partials/_topbar.html' %}
+{% else %}
+{% include 'partials/_topbar_with_user.html' %}
+{% endif %}
+
+{% if not user or user == 'None' %}
+{% include 'partials/_buttons_no_user.html' %}
+{% else %}
+{% include 'partials/_buttons_with_user.html' %}
+{% endif %}
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/c25b931814.js" crossorigin="anonymous"></script>
+
+<style>
+  .card{margin-bottom:20px;}
+</style>
+
+<section id="showcase">
+    <div class="container text-center">
+      <div class="home-search p-5">
+        <div class="overlay p-5">
+          <h1 class="display-4 mb-4">
+            Find your Classes
+          </h1>
+          <p class="lead">Search through the <strong>Core</strong> classes courses offered at University of Shoen</p>
+          <div class="search">
+            <form action="{% url 'core_search' user%}">
+              <!-- Form Row 1 -->
+              <div class="form-row">
+               
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Department</label>
+                  <input type="text" name="department" class="form-control" placeholder="Department" value = {{values.department}}>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Course No.</label>
+                  <input type="text" name="course_no" class="form-control"  placeholder="Course #" value = {{values.course_no}}>
+                </div>
+
+                
+              </div>
+              <!-- Form Row 2 -->
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label class="sr-only">Credit</label>
+                  <select name="credits" class="form-control">
+                    <option selected="true" disabled="disabled">Credit</option>
+                    {% for key,value in credit_choices.items %}
+
+                    <option value="{{key}}">{{value}}</option>
+
+                    {% endfor %}
+
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label class="sr-only">Gen Ed</label>
+                  <select name="core_choices" class="form-control">
+                    <option selected="true" disabled="disabled">Core</option>
+                    {% for key,value in core_choices.items %}
+
+                    <option value="{{key}}">{{value}}</option>
+
+                    {% endfor %}
+
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-danger btn-block mt-4" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="listings" class="py-4">
+    <div class="container">
+      <div class="row">
+        {% if courses %}
+            {% for course in courses %}
+              <div class="card text-center border-secondary">
+                <div class="card-header bg-warning text-black">
+                  <strong>{{course.course_id}}</strong>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{course.name}}</h5>
+                  <p class="card-text">Description: {{course.description}}</p>
+                  <p> Grading Method: {{course.grading_method}}&emsp;&emsp;&emsp;&emsp;Credits: {{course.credits}}
+                    &emsp;&emsp;&emsp;&emsp;Gen Ed: {{course.gen_ed}} &emsp;&emsp;&emsp;&emsp; Core: {{course.core}} 
+                  </p> 
+                  <a href="{% url 'list_professors' course.course_id user %}" class="btn btn-danger professor_button">Show Professors</a>
+                  <a href="{% url 'save_to_list' user course.course_id %}" class="btn btn-danger">Save</a>
+                </div>
+              </div>
+            {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </section>  
+  {% endblock content %}

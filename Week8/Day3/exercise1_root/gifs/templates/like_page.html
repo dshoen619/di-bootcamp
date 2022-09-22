@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .like_button{
+            background-color: #4CAF50;
+        }
+        .dislike_button{
+            background-color: red;
+        }
+    </style>
+   
+    <script>
+        
+        function increment_val(id){
+            id++;
+
+        }
+    </script>
+</head>
+<body>
+
+    <p1> Gifs </p1>
+
+    {% for gif in gifs %}
+    <p>
+
+        <img src={{gif.url}}> 
+        <a href=./add_like/{{gif.id}}><button type="button" name ="Like" class="like_button">Vote Up!</button></a>
+        <button type="button" class="dislike_button">Vote Down!</button>
+        {{gif.likes.all()}}
+    </p>
+    {% endfor %}
+    
+</body>
+</html>

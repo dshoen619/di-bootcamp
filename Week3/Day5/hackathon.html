@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpbutWorse.com</title>
+    <link rel="stylesheet" type="text/css" href="hackathon.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="col col-lg-1">
+                    <a class="navbar-brand" href="#">&emsp;&emsp;&emsp;&emsp;&emsp;YelpbutWorse.com</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>    
+            <div class="collapse navbar-collapse d-flex justify-content-around"  id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <!-- <a class="nav-link" aria-current="page" href="file:///Users/davidshoen1/Documents/DI-Bootcamp-Stage1/Week3/Day5/hackathon.html#">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;HOME</a> -->
+                </li>
+                <li id="input">
+                    <input id ="input_nav" type="text" class="form-control input-group-sm" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Search Somewhere Else!">
+                </li>
+                <li>
+                   <button type="button" id="nav_button">Search</button> 
+                </li>
+                </ul>
+            </div>
+            </div>
+    </nav>
+
+    <div class="bg-image" id="background" >
+        <!-- <h1 id ="header" class="display-3">YelpbutWorse.com
+        </h1> -->
+        <h3 id = "header" class= "display-6">Let us Help plan your Trip!</h3>
+        <form>
+            <div class="input-group-lg" id="text_box">
+
+                <input id ="input_2" type="text" class="form-control input-group-lg" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Where do you want to go?">
+              </div>
+        <br>
+        <input type="submit" value="Submit" id="button" class="btn btn-secondary btn-lg">
+        </form> 
+
+        <p id="things_to_do"></p>
+        <p id="food"></p> 
+        <p id="bars"></p>  
+        <p id="kids_activities"></p>
+        <p id="hotels"></p>
+</body>
+<script src="hackathon.js"></script>
+</html>

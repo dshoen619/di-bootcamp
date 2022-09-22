@@ -1,0 +1,33 @@
+{% block content %}
+<head>
+<style>
+  .button {
+    width:110%;
+    font-family:'Lucida bright', serif;
+    margin-top:10px;
+    border:1px;
+    border-color: black;
+}
+</style>
+</head>
+
+<div class="container">
+    <div class="row course_types">
+      <div class="col-md-3 ">
+        <a type="button" class="btn btn-secondary button " href="{% url 'search' user%}" >All Courses</a>
+      </div>
+      <div class="col-md-3 ">
+        
+        <a type="button" class="btn btn-secondary button" href="{% url 'gen_ed_search' user%}">Gen-Ed Courses</a>
+      </div>
+      <div class="col-md-3 ">
+        <a type="button" class="btn btn-secondary button" href="{% url 'core_search' user%}">Core Courses</a>
+      </div>
+      <div class="col-md-3 ">
+        <a type="button" class="btn btn-secondary button" href="{% url 'show_saved_courses' user %}">My Saved Courses</a>
+      </div>
+
+    </div>
+</div>
+
+{% endblock content %}

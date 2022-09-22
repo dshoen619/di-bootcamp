@@ -1,0 +1,106 @@
+{
+    "animals": [
+        {
+            "id" :1,
+            "name": "Dog",
+            "legs": 4,
+            "weight": 5.67,
+            "height":4.2,
+            "speed": 34,
+            "family": 2,
+            "image": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Domestic Cat",
+            "legs": 2,
+            "weight": 5.67,
+            "height":4.2,
+            "speed": 34,
+            "family": 1,
+            "image": "Domestic Cat.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Panther",
+            "legs": 2,
+            "weight": 5.67,
+            "height":4.2,
+            "speed": 34,
+            "family": 1,
+            "image": "Panther.jpeg"
+        },
+
+        {
+            "id": 4,
+            "name": "Frog",
+            "legs": 4,
+            "weight": 5,
+            "height":1,
+            "speed": 20,
+            "family": 7,
+            "image": "Frog.jpeg"
+        },
+        {
+            "id": 5,
+            "name": "Lizard",
+            "legs": 4,
+            "weight": 3,
+            "height":2,
+            "speed": 25,
+            "family": 4,
+            "image": "Lizard.jpeg"
+        },
+        {
+            "id": 6,
+            "name": "spider",
+            "legs": 8,
+            "weight": 1,
+            "height":1,
+            "speed": 10,
+            "family": 6,
+            "image": "spider.jpeg"
+        },
+        {
+            "id": 7,
+            "name": "ant",
+            "legs": 6,
+            "weight": 1,
+            "height":1,
+            "speed": 2,
+            "family": 5,
+            "image": "ant.jpeg"
+        }
+
+    ],
+    "families": [
+        {
+            "id": 1,
+            "name": "Felidae"
+        },
+        {
+            "id": 2,
+            "name": "Caninae"
+        },
+        {
+            "id": 3,
+            "name": "mammal"
+        },
+        {
+            "id": 4,
+            "name": "Reptile"
+        },
+        {
+            "id": 5,
+            "name": "insect"
+        },
+        {
+            "id": 6,
+            "name": "Arachnid"
+        },
+        {
+            "id": 7,
+            "name": "Amphibian"
+        }
+    ]
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c25b931814.js" crossorigin="anonymous"></script>
+    <title>Welcome</title>
+    <style>
+
+
+    .navbar{
+    padding: 30px;
+    }
+    .fa-phone{
+        margin-left: 12%;
+    }
+    .fa-envelope{
+        margin-right:10%;
+    }
+    .lorem {
+        padding-left:100px;
+        padding-right:100px;
+        opacity:1;
+    }
+    .heading { padding-top:40px;
+            padding-bottom: 25px;
+            opacity:1}
+
+    .grey-box { 
+        padding-top:40px;
+        margin-left:15%;
+        margin-right:50%;
+        width:70%;
+        height: 20%;
+        color: white;
+        background: rgba(128,128,128, .6)}
+
+
+    .green-box{
+        background:rgb(51, 153, 102,.6);    
+        color:white}
+    .search_form{
+        padding:30px;
+    }
+    .listing_header{
+        padding:15px;
+    }
+    .card{
+        margin:15px;
+    }
+    .row{
+        padding-left: 7.5%;
+
+    }
+    .btn {padding:5%;
+          margin-bottom:5%}
+
+
+    </style>
+</head>
+<body>
+    <!-- Image and text -->
+<!-- Image and text -->
+<nav class="navbar navbar-light text-light bg-secondary">
+    <i class="fa-solid fa-phone"> 053-975-6215</i>
+    <i class="fa-solid fa-envelope">dbshoen@gmail.com</i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <a class="navbar-brand text-center header" href="#">
+    </a>
+  </nav>
+    {% include 'partials/navbar-header.html' %}
+
+<div class ="text-center" style="background-image: url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-repeat:no-repeat; background-size:cover">
+    <div class="grey-box">
+    <h1 class ="heading">Property Searching Just Got So Easy</h1>
+    <div class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis ducimus deserunt officia consequatur ullam ex aliquid aut alias repudiandae blanditiis harum, dolores exercitationem neque corporis fugiat reprehenderit cum debitis voluptatem?</div>
+    <div class="search_form">
+    <p>Keyword  {{form.keyword}} &emsp; City {{form.city}} &emsp; State {{form.state}}</p>
+    <p>Bedrooms{{form.bedrooms}} &emsp; Max Price{{form.max_price}}</p> 
+    <button class="btn btn-primary"type="submit">Search</button>
+    </div>
+    </div>
+    </div>
+
+<div><h4 class="text-center listing_header">Latest Listings</h4></div>
+
+<div class="row">
+    <div class="card border-primary mb-5  col-sm-3 col-md-3" style="width: 20rem;">
+        <img class="card-img-top" src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title text-center">11 Dizengoff St</h5>
+            <p class="card-text text-center"><i class="fa-solid fa-location-pin">&ensp;</i>11 Dizengoff St, Israel 08816</p>
+        </div>
+        <div class="card-body">   
+            <span class="card-item text-right"><i class="fa-solid fa-square"></i>&ensp;550 sqft</span>&emsp;&emsp;&emsp;
+            <span class="card-item text-right"><i class="fa-solid fa-warehouse"></i>&ensp;1 Garage</span>
+        </div>
+        <a href="#" class="btn btn-primary">More Info</a>
+    </div>
+
+     <div class="card border-primary mb-5 col-md-3" style="width: 20rem;">
+        <img class="card-img-top" src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title text-center">26 Ben Yehuda St</h5>
+            <p class="card-text text-center"><i class="fa-solid fa-location-pin">&ensp;</i>26 Ben Yehuda Tel Aviv, Israel 08817</p>
+        </div>
+         <div class="card-body">
+            <span class="card-item text-right"><i class="fa-solid fa-square"></i>&ensp;1000 sqft</span>&emsp;&emsp;&emsp;
+            <span class="card-item text-right"><i class="fa-solid fa-warehouse"></i>&ensp;2 Garages</span>
+        </div>
+        <a href="#" class="btn btn-primary">More Info</a>
+    </div>
+    <div class="card border-primary mb-5 col-md-3" style="width: 20rem;">
+        <img class="card-img-top" src="https://images.pexels.com/photos/59924/pexels-photo-59924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title text-center">45 Jaabotinsky St</h5>
+            <p class="card-text text-center"><i class="fa-solid fa-location-pin">&ensp;</i>45 Jaabotinsky St, Herzliya Israel 08818</p>
+        </div>
+         <div class="card-body">
+            <span class="card-item text-right"><i class="fa-solid fa-square"></i>&ensp;4000 sqft</span>&emsp;&emsp;&emsp;
+            <span class="card-item text-right"><i class="fa-solid fa-warehouse"></i>&ensp;3 Garages</span>
+        </div>
+        <a href="#" class="btn btn-primary">More Info</a>
+    </div>
+</div>
+
+<div class="green-box">
+    <footer class="page-footer"> 
+        <div class="footer-copyright text-center py-3 " style="background-image: url('https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&w=400'); background-repeat:no-repeat; background-size:cover">
+            <div class="row">
+                <div class="col-sm-6">
+                <div class="card bg-transparent">
+                    <div class="card-body">
+                    <h5 class="card-title">Consulting Services</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt et, adipisci laboriosam exercitationem deleniti eveniet distinctio in maxime sunt ullam asperiores voluptatem perferendis reprehenderit blanditiis eum? A, eveniet omnis!</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div class="card bg-transparent">
+                    <div class="card-body">
+                    <h5 class="card-title">Renting</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error neque facilis incidunt deleniti! At in libero ad, sint perferendis velit sapiente nisi quos illo qui nostrum nesciunt accusamus possimus est..</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div> 
+        </footer>
+    </div>
+
+</body>
+</html>
